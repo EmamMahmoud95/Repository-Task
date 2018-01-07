@@ -36,8 +36,7 @@ public class DatabaseHandler extends SQLiteOpenHelper {
                 + Constant.fork+" flag INTEGER DEFAULT 0 , "
                 +Constant.ownerHtml_url +"  TEXT );";
 
-        Log.i("lolo",createWishesTable);
-        Toast.makeText(context,createWishesTable,Toast.LENGTH_LONG).show();
+
         db.execSQL(createWishesTable);
 
     }
